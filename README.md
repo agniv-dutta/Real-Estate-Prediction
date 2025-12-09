@@ -60,25 +60,53 @@ Includes training and comparison of:
 ## 📁 Project Structure
 
 ```
-real-estate-prediction/
-├── data/
-│   ├── raw/
-│   ├── processed/
-│   └── external/
-├── models/
-├── notebooks/
-├── results/
-│   ├── plots/
-│   └── metrics/
-├── src/
+real_estate_prediction/
+│
+├── code/
+│   ├── __pycache__/
+│   │
+│   ├── data/
+│   │   ├── external/
+│   │   ├── processed/
+│   │   ├── raw/
+│   │   │   └── housing_data.xlsx
+│   │   └── __init__.py
+│   │
+│   ├── models/            # (empty or model files generated later)
+│   │
+│   ├── notebooks/         # (Jupyter notebooks)
+│   │
+│   ├── results/
+│   │   ├── metrics/
+│   │   │   ├── feature_importance_Gradient Boosting.xlsx
+│   │   │   ├── feature_importance_Random Forest.xlsx
+│   │   │   ├── feature_importance_XGBoost.xlsx
+│   │   │   └── model_performance.xlsx
+│   │   │
+│   │   └── plots/
+│   │       ├── correlation_matrix.png
+│   │       ├── feature_distributions.png
+│   │       ├── feature_importance.png
+│   │       ├── feature_relationships.png
+│   │       ├── geographic_distribution.png
+│   │       ├── model_comparison.png
+│   │       ├── ocean_proximity_distribution.png
+│   │       ├── predictions_vs_actual.png
+│   │       ├── price_analysis.png
+│   │       └── residual_analysis.png
+│   │
+│   ├── __init__.py
+│   ├── config.py
 │   ├── data_loader.py
 │   ├── eda.py
+│   ├── main.py
 │   ├── model_trainer.py
-│   ├── utils.py
-│   └── config.py
-├── main.py
-├── requirements.txt
-└── README.md
+│   ├── requirements.txt
+│   ├── run.py
+│   └── utils.py
+│
+└── README.md  
+
 ```
 
 ## 🛠️ Installation
